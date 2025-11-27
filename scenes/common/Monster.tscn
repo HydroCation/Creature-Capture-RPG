@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://byhegjpcofhnh"]
+
+[ext_resource type="Script" uid="uid://bhbyuf8y2upgq" path="res://scripts/components/Monster.gd" id="1_4ywg8"]
+[ext_resource type="Script" uid="uid://hljlqbjggvvc" path="res://scripts/components/StatsComponent.gd" id="2_sjakk"]
+[ext_resource type="Script" uid="uid://c0liko73ss40j" path="res://scripts/components/MovesetComponent.gd" id="3_u4h8e"]
+[ext_resource type="Script" uid="uid://cs4g86f40wek6" path="res://scripts/components/SpriteComponent.gd" id="4_c2cxd"]
+
+[node name="Monster" type="Node"]
+script = ExtResource("1_4ywg8")
+
+[node name="StatsComponent" type="Node" parent="."]
+script = ExtResource("2_sjakk")
+
+[node name="MovesetComponent" type="Node" parent="."]
+script = ExtResource("3_u4h8e")
+
+[node name="SpriteComponent" type="Sprite2D" parent="."]
+script = ExtResource("4_c2cxd")
